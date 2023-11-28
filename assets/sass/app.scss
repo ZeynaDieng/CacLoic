@@ -1,0 +1,122 @@
+//vendor imports
+//@import 'node_modules/animate.css/animate.css';
+//@import 'bootstrap';
+//@import "~bulma/sass/utilities/all";
+
+/*     @use '~bulma/sass/utilities/initial-variables'as * with(
+
+
+);  */
+
+
+@use '~bulma/bulma'with ($turquoise: #22B48C, $primary: #22B48C, $blue: #f03434, $purple: yellow, );
+//@import "node_modules/bulma/bulma";
+//@import "bulma";
+
+//@import "node_modules/reset-css/sass/reset";
+@import "node_modules/foundation-sites/scss/foundation";
+@import "settings";
+
+@include foundation-xy-grid-classes();
+//@include foundation-menu();
+//@include foundation-dropdown-menu();
+//@include foundation-float-classes();
+//@include foundation-forms();
+@include foundation-flex-classes;
+//@include foundation-visibility-classes();
+// Color
+//@import "node_modules/materialize-css/sass/components/color-variables";
+//@import "node_modules/materialize-css/sass/components/color-classes";
+// Variables;
+//@import "node_modules/materialize-css/sass/components/variables";
+// Reset
+//@import "node_modules/materialize-css/sass/components/normalize";
+// Materialize components
+//@import "node_modules/materialize-css/sass/components/global";
+
+//@import "node_modules/materialize-css/sass/components/dropdown";
+//@import "~materialize-css/sass/components/forms/checkboxes";
+/* @import "node_modules/materialize-css/sass/components/typography";
+@import 'node_modules/materialize-css/sass/components/cards';
+@import 'node_modules/materialize-css/sass/components/icons-material-design';
+@import 'node_modules/materialize-css/sass/components/tabs';
+
+@import 'node_modules/materialize-css/sass/components/buttons';
+@import 'node_modules/materialize-css/sass/components/badges';
+@import 'node_modules/materialize-css/sass/components/toast'; */
+/* @import "node_modules/materialize-css/sass/components/waves";
+@import "node_modules/materialize-css/sass/components/transitions";
+//@import "node_modules/materialize-css/sass/components/dropdown";
+@import "node_modules/materialize-css/sass/components/chips";
+@import "node_modules/materialize-css/sass/components/pulse";
+@import "node_modules/materialize-css/sass/components/sidenav";
+
+@import "node_modules/materialize-css/sass/components/collapsible"; */
+@import "node_modules/slick-carousel/slick/slick.css";
+@import "node_modules/slick-carousel/slick/slick-theme.css";
+/* Validation Sass Placeholders */
+
+//@import "~materialize-css/sass/components/forms/select";
+//customs
+@import "assets/sass/partials/global";
+//@import "/assets/sass/common/form-field-fixes";
+@import "assets/sass/common/generalStyle";
+//@import 'node_modules/materialize-css/sass/components/forms/input-fields';
+/* @import 'node_modules/materialize-css/sass/components/forms/select';
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+#load-more {
+  color: $primary-color;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+main#body-wrapper{
+//padding-bottom: 119px;
+}
+.b-slider.is-primary{
+background: #22B48C !important;
+}
+
+a{
+  //color: $primary-color !important;
+}
+.tabs li a {
+  //scolor: black!important;
+}
+.tabs li.is-active a {
+ // color: $primary-color!important;
+}
+
+.nuxt-link-exact-active{
+ color:$primary-color;
+ background-color:#e9f8f4;
+}
+
+.img-grey-bg{
+background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+.img-bg{
+
+width: 100%;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+  &::before{
+          content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.03);
+  }
+
+}

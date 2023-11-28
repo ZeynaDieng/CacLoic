@@ -1,0 +1,415 @@
+{
+    "message": "Liste des sections trouvées avec succes",
+    "status": "OK",
+    "data": [{
+        "titre": "",
+        "_id": "6287bfb6657d3e8ef8a3846a",
+        "content": [{
+            "_id": "6287b1188e37e9b8f62ff6eb",
+            "main": true,
+            "products": [{
+                "_id": "6283cabfa7a2698d2de0089f",
+                "name": "test name",
+                "slug": "lot-de-6-assiettes-ronde-en-porcelaine-27cm-ca820963",
+                "images": [{
+                    "_id": "6283cabfa7a2698d2de00888",
+                    "filename": "/storage/SQJILTWfXboF"
+                }]
+            }, {
+                "_id": "6283cac0a7a2698d2de008c4",
+                "name": "Bouilloire électrique en verre  2000 watts 2 litres CA820961",
+                "slug": "bouilloire-electrique-en-verre-2000-watts-2-litres-ca820961",
+                "images": [{
+                    "_id": "6283cabfa7a2698d2de00895",
+                    "filename": "/storage/evEaUdXttNEn"
+                }]
+            }, {
+                "_id": "6283cac1a7a2698d2de008cd",
+                "name": "Pomme de douche à Main Haute Pression 4.1&#8221; CA820328",
+                "slug": "pomme-de-douche-a-main-haute-pression-41and#8221;-ca820328",
+                "images": [{
+                    "_id": "6283cac1a7a2698d2de008c7",
+                    "filename": "/storage/yIQgRnekYfkz"
+                }]
+            }, {
+                "_id": "6283cac2a7a2698d2de008d8",
+                "name": "Set de Draps + housse + 2 taies d&#8217;oreiller coton (4 pièces) Multicolore CA820661",
+                "slug": "set-de-draps-housse-2-taies-dand#8217;oreiller-coton-4-pieces-multicolore-ca820661",
+                "images": [{
+                    "_id": "6283cac1a7a2698d2de008d2",
+                    "filename": "/storage/WUSLtjaHRAVQ"
+                }]
+            }],
+            "status": "active",
+            "date": "2022-05-20T15:17:19.264Z",
+            "titre": "titre",
+            "desciption": "description",
+            "category": {
+                "_id": "6283cabfa7a2698d2de00893",
+                "title": "Maison Bureau",
+                "slug": "maison-bureau"
+            },
+            "typeSection": 1,
+            "__v": 0
+        }, {
+            "_id": "6287b13e8e37e9b8f62ff6ef",
+            "main": false,
+            "products": [{
+                "_id": "6283cac0a7a2698d2de008c4",
+                "name": "Bouilloire électrique en verre  2000 watts 2 litres CA820961",
+                "slug": "bouilloire-electrique-en-verre-2000-watts-2-litres-ca820961",
+                "images": [{
+                    "_id": "6283cabfa7a2698d2de00895",
+                    "filename": "/storage/evEaUdXttNEn"
+                }]
+            }, {
+                "_id": "6283cac5a7a2698d2de00910",
+                "name": "Set  de 2 boîte à Pain De Cuisine En Métal Avec Couvercle Enroulable Pour Comptoir GM et PM CA820554",
+                "slug": "set-de-2-boite-a-pain-de-cuisine-en-metal-avec-couvercle-enroulable-pour-comptoir-gm-et-pm-ca820554",
+                "images": [{
+                    "_id": "6283cac5a7a2698d2de0090a",
+                    "filename": "/storage/PnqvbiBRRgtq"
+                }]
+            }, {
+                "_id": "6283cac5a7a2698d2de0091d",
+                "name": "Set  de 2 boîte à Pain De Cuisine En Métal Avec Couvercle Enroulable Pour Comptoir GM et PM CA820554",
+                "slug": "set-de-2-boite-a-pain-de-cuisine-en-metal-avec-couvercle-enroulable-pour-comptoir-gm-et-pm-ca820554",
+                "images": [{
+                    "_id": "6283cac5a7a2698d2de0090a",
+                    "filename": "/storage/PnqvbiBRRgtq"
+                }, {
+                    "_id": "6283cac5a7a2698d2de00912",
+                    "filename": "/storage/kWBmalBhoRhJ"
+                }, {
+                    "_id": "6283cac5a7a2698d2de00917",
+                    "filename": "/storage/jBMXNxuaiweK"
+                }]
+            }, {
+                "_id": "6283cac5a7a2698d2de0091d",
+                "name": "Set  de 2 boîte à Pain De Cuisine En Métal Avec Couvercle Enroulable Pour Comptoir GM et PM CA820554",
+                "slug": "set-de-2-boite-a-pain-de-cuisine-en-metal-avec-couvercle-enroulable-pour-comptoir-gm-et-pm-ca820554",
+                "images": [{
+                    "_id": "6283cac5a7a2698d2de0090a",
+                    "filename": "/storage/PnqvbiBRRgtq"
+                }, {
+                    "_id": "6283cac5a7a2698d2de00912",
+                    "filename": "/storage/kWBmalBhoRhJ"
+                }, {
+                    "_id": "6283cac5a7a2698d2de00917",
+                    "filename": "/storage/jBMXNxuaiweK"
+                }]
+            }],
+            "status": "active",
+            "date": "2022-05-20T15:17:19.264Z",
+            "titre": "titre",
+            "desciption": "description",
+            "category": {
+                "_id": "6283cabfa7a2698d2de0089b",
+                "title": "Accessoires",
+                "slug": "accessoires"
+            },
+            "typeSection": 1,
+            "__v": 0
+        }, {
+            "_id": "6287b13e8e37e9b8f62ff6ef",
+            "main": false,
+            "products": [{
+                "_id": "6283cac0a7a2698d2de008c4",
+                "name": "Bouilloire électrique en verre  2000 watts 2 litres CA820961",
+                "slug": "bouilloire-electrique-en-verre-2000-watts-2-litres-ca820961",
+                "images": [{
+                    "_id": "6283cabfa7a2698d2de00895",
+                    "filename": "/storage/evEaUdXttNEn"
+                }]
+            }, {
+                "_id": "6283cac5a7a2698d2de00910",
+                "name": "Set  de 2 boîte à Pain De Cuisine En Métal Avec Couvercle Enroulable Pour Comptoir GM et PM CA820554",
+                "slug": "set-de-2-boite-a-pain-de-cuisine-en-metal-avec-couvercle-enroulable-pour-comptoir-gm-et-pm-ca820554",
+                "images": [{
+                    "_id": "6283cac5a7a2698d2de0090a",
+                    "filename": "/storage/PnqvbiBRRgtq"
+                }]
+            }, {
+                "_id": "6283cac5a7a2698d2de0091d",
+                "name": "Set  de 2 boîte à Pain De Cuisine En Métal Avec Couvercle Enroulable Pour Comptoir GM et PM CA820554",
+                "slug": "set-de-2-boite-a-pain-de-cuisine-en-metal-avec-couvercle-enroulable-pour-comptoir-gm-et-pm-ca820554",
+                "images": [{
+                    "_id": "6283cac5a7a2698d2de0090a",
+                    "filename": "/storage/PnqvbiBRRgtq"
+                }, {
+                    "_id": "6283cac5a7a2698d2de00912",
+                    "filename": "/storage/kWBmalBhoRhJ"
+                }, {
+                    "_id": "6283cac5a7a2698d2de00917",
+                    "filename": "/storage/jBMXNxuaiweK"
+                }]
+            }, {
+                "_id": "6283cac5a7a2698d2de0091d",
+                "name": "Set  de 2 boîte à Pain De Cuisine En Métal Avec Couvercle Enroulable Pour Comptoir GM et PM CA820554",
+                "slug": "set-de-2-boite-a-pain-de-cuisine-en-metal-avec-couvercle-enroulable-pour-comptoir-gm-et-pm-ca820554",
+                "images": [{
+                    "_id": "6283cac5a7a2698d2de0090a",
+                    "filename": "/storage/PnqvbiBRRgtq"
+                }, {
+                    "_id": "6283cac5a7a2698d2de00912",
+                    "filename": "/storage/kWBmalBhoRhJ"
+                }, {
+                    "_id": "6283cac5a7a2698d2de00917",
+                    "filename": "/storage/jBMXNxuaiweK"
+                }]
+            }],
+            "status": "active",
+            "date": "2022-05-20T15:17:19.264Z",
+            "titre": "titre",
+            "desciption": "description",
+            "category": {
+                "_id": "6283cabfa7a2698d2de0089b",
+                "title": "Accessoires",
+                "slug": "accessoires"
+            },
+            "typeSection": 1,
+            "__v": 0
+        }, {
+            "_id": "6287b13e8e37e9b8f62ff6ef",
+            "main": false,
+            "products": [{
+                "_id": "6283cac0a7a2698d2de008c4",
+                "name": "Bouilloire électrique en verre  2000 watts 2 litres CA820961",
+                "slug": "bouilloire-electrique-en-verre-2000-watts-2-litres-ca820961",
+                "images": [{
+                    "_id": "6283cabfa7a2698d2de00895",
+                    "filename": "/storage/evEaUdXttNEn"
+                }]
+            }, {
+                "_id": "6283cac5a7a2698d2de00910",
+                "name": "Set  de 2 boîte à Pain De Cuisine En Métal Avec Couvercle Enroulable Pour Comptoir GM et PM CA820554",
+                "slug": "set-de-2-boite-a-pain-de-cuisine-en-metal-avec-couvercle-enroulable-pour-comptoir-gm-et-pm-ca820554",
+                "images": [{
+                    "_id": "6283cac5a7a2698d2de0090a",
+                    "filename": "/storage/PnqvbiBRRgtq"
+                }]
+            }, {
+                "_id": "6283cac5a7a2698d2de0091d",
+                "name": "Set  de 2 boîte à Pain De Cuisine En Métal Avec Couvercle Enroulable Pour Comptoir GM et PM CA820554",
+                "slug": "set-de-2-boite-a-pain-de-cuisine-en-metal-avec-couvercle-enroulable-pour-comptoir-gm-et-pm-ca820554",
+                "images": [{
+                    "_id": "6283cac5a7a2698d2de0090a",
+                    "filename": "/storage/PnqvbiBRRgtq"
+                }, {
+                    "_id": "6283cac5a7a2698d2de00912",
+                    "filename": "/storage/kWBmalBhoRhJ"
+                }, {
+                    "_id": "6283cac5a7a2698d2de00917",
+                    "filename": "/storage/jBMXNxuaiweK"
+                }]
+            }, {
+                "_id": "6283cac5a7a2698d2de0091d",
+                "name": "Set  de 2 boîte à Pain De Cuisine En Métal Avec Couvercle Enroulable Pour Comptoir GM et PM CA820554",
+                "slug": "set-de-2-boite-a-pain-de-cuisine-en-metal-avec-couvercle-enroulable-pour-comptoir-gm-et-pm-ca820554",
+                "images": [{
+                    "_id": "6283cac5a7a2698d2de0090a",
+                    "filename": "/storage/PnqvbiBRRgtq"
+                }, {
+                    "_id": "6283cac5a7a2698d2de00912",
+                    "filename": "/storage/kWBmalBhoRhJ"
+                }, {
+                    "_id": "6283cac5a7a2698d2de00917",
+                    "filename": "/storage/jBMXNxuaiweK"
+                }]
+            }],
+            "status": "active",
+            "date": "2022-05-20T15:17:19.264Z",
+            "titre": "titre",
+            "desciption": "description",
+            "category": {
+                "_id": "6283cabfa7a2698d2de0089b",
+                "title": "Accessoires",
+                "slug": "accessoires"
+            },
+            "typeSection": 1,
+            "__v": 0
+        }, {
+            "_id": "6287b13e8e37e9b8f62ff6ef",
+            "main": false,
+            "products": [{
+                "_id": "6283cac0a7a2698d2de008c4",
+                "name": "Bouilloire électrique en verre  2000 watts 2 litres CA820961",
+                "slug": "bouilloire-electrique-en-verre-2000-watts-2-litres-ca820961",
+                "images": [{
+                    "_id": "6283cabfa7a2698d2de00895",
+                    "filename": "/storage/evEaUdXttNEn"
+                }]
+            }, {
+                "_id": "6283cac5a7a2698d2de00910",
+                "name": "Set  de 2 boîte à Pain De Cuisine En Métal Avec Couvercle Enroulable Pour Comptoir GM et PM CA820554",
+                "slug": "set-de-2-boite-a-pain-de-cuisine-en-metal-avec-couvercle-enroulable-pour-comptoir-gm-et-pm-ca820554",
+                "images": [{
+                    "_id": "6283cac5a7a2698d2de0090a",
+                    "filename": "/storage/PnqvbiBRRgtq"
+                }]
+            }, {
+                "_id": "6283cac5a7a2698d2de0091d",
+                "name": "Set  de 2 boîte à Pain De Cuisine En Métal Avec Couvercle Enroulable Pour Comptoir GM et PM CA820554",
+                "slug": "set-de-2-boite-a-pain-de-cuisine-en-metal-avec-couvercle-enroulable-pour-comptoir-gm-et-pm-ca820554",
+                "images": [{
+                    "_id": "6283cac5a7a2698d2de0090a",
+                    "filename": "/storage/PnqvbiBRRgtq"
+                }, {
+                    "_id": "6283cac5a7a2698d2de00912",
+                    "filename": "/storage/kWBmalBhoRhJ"
+                }, {
+                    "_id": "6283cac5a7a2698d2de00917",
+                    "filename": "/storage/jBMXNxuaiweK"
+                }]
+            }, {
+                "_id": "6283cac5a7a2698d2de0091d",
+                "name": "Set  de 2 boîte à Pain De Cuisine En Métal Avec Couvercle Enroulable Pour Comptoir GM et PM CA820554",
+                "slug": "set-de-2-boite-a-pain-de-cuisine-en-metal-avec-couvercle-enroulable-pour-comptoir-gm-et-pm-ca820554",
+                "images": [{
+                    "_id": "6283cac5a7a2698d2de0090a",
+                    "filename": "/storage/PnqvbiBRRgtq"
+                }, {
+                    "_id": "6283cac5a7a2698d2de00912",
+                    "filename": "/storage/kWBmalBhoRhJ"
+                }, {
+                    "_id": "6283cac5a7a2698d2de00917",
+                    "filename": "/storage/jBMXNxuaiweK"
+                }]
+            }],
+            "status": "active",
+            "date": "2022-05-20T15:17:19.264Z",
+            "titre": "titre",
+            "desciption": "description",
+            "category": {
+                "_id": "6283cabfa7a2698d2de0089b",
+                "title": "Accessoires",
+                "slug": "accessoires"
+            },
+            "typeSection": 1,
+            "__v": 0
+        }, {
+            "_id": "6287b13e8e37e9b8f62ff6ef",
+            "main": false,
+            "products": [{
+                "_id": "6283cac0a7a2698d2de008c4",
+                "name": "Bouilloire électrique en verre  2000 watts 2 litres CA820961",
+                "slug": "bouilloire-electrique-en-verre-2000-watts-2-litres-ca820961",
+                "images": [{
+                    "_id": "6283cabfa7a2698d2de00895",
+                    "filename": "/storage/evEaUdXttNEn"
+                }]
+            }, {
+                "_id": "6283cac5a7a2698d2de00910",
+                "name": "Set  de 2 boîte à Pain De Cuisine En Métal Avec Couvercle Enroulable Pour Comptoir GM et PM CA820554",
+                "slug": "set-de-2-boite-a-pain-de-cuisine-en-metal-avec-couvercle-enroulable-pour-comptoir-gm-et-pm-ca820554",
+                "images": [{
+                    "_id": "6283cac5a7a2698d2de0090a",
+                    "filename": "/storage/PnqvbiBRRgtq"
+                }]
+            }, {
+                "_id": "6283cac5a7a2698d2de0091d",
+                "name": "Set  de 2 boîte à Pain De Cuisine En Métal Avec Couvercle Enroulable Pour Comptoir GM et PM CA820554",
+                "slug": "set-de-2-boite-a-pain-de-cuisine-en-metal-avec-couvercle-enroulable-pour-comptoir-gm-et-pm-ca820554",
+                "images": [{
+                    "_id": "6283cac5a7a2698d2de0090a",
+                    "filename": "/storage/PnqvbiBRRgtq"
+                }, {
+                    "_id": "6283cac5a7a2698d2de00912",
+                    "filename": "/storage/kWBmalBhoRhJ"
+                }, {
+                    "_id": "6283cac5a7a2698d2de00917",
+                    "filename": "/storage/jBMXNxuaiweK"
+                }]
+            }, {
+                "_id": "6283cac5a7a2698d2de0091d",
+                "name": "Set  de 2 boîte à Pain De Cuisine En Métal Avec Couvercle Enroulable Pour Comptoir GM et PM CA820554",
+                "slug": "set-de-2-boite-a-pain-de-cuisine-en-metal-avec-couvercle-enroulable-pour-comptoir-gm-et-pm-ca820554",
+                "images": [{
+                    "_id": "6283cac5a7a2698d2de0090a",
+                    "filename": "/storage/PnqvbiBRRgtq"
+                }, {
+                    "_id": "6283cac5a7a2698d2de00912",
+                    "filename": "/storage/kWBmalBhoRhJ"
+                }, {
+                    "_id": "6283cac5a7a2698d2de00917",
+                    "filename": "/storage/jBMXNxuaiweK"
+                }]
+            }],
+            "status": "active",
+            "date": "2022-05-20T15:17:19.264Z",
+            "titre": "titre",
+            "desciption": "description",
+            "category": {
+                "_id": "6283cabfa7a2698d2de0089b",
+                "title": "Accessoires",
+                "slug": "accessoires"
+            },
+            "typeSection": 1,
+            "__v": 0
+        }, {
+            "_id": "6287b13e8e37e9b8f62ff6ef",
+            "main": false,
+            "products": [{
+                "_id": "6283cac0a7a2698d2de008c4",
+                "name": "Bouilloire électrique en verre  2000 watts 2 litres CA820961",
+                "slug": "bouilloire-electrique-en-verre-2000-watts-2-litres-ca820961",
+                "images": [{
+                    "_id": "6283cabfa7a2698d2de00895",
+                    "filename": "/storage/evEaUdXttNEn"
+                }]
+            }, {
+                "_id": "6283cac5a7a2698d2de00910",
+                "name": "Set  de 2 boîte à Pain De Cuisine En Métal Avec Couvercle Enroulable Pour Comptoir GM et PM CA820554",
+                "slug": "set-de-2-boite-a-pain-de-cuisine-en-metal-avec-couvercle-enroulable-pour-comptoir-gm-et-pm-ca820554",
+                "images": [{
+                    "_id": "6283cac5a7a2698d2de0090a",
+                    "filename": "/storage/PnqvbiBRRgtq"
+                }]
+            }, {
+                "_id": "6283cac5a7a2698d2de0091d",
+                "name": "Set  de 2 boîte à Pain De Cuisine En Métal Avec Couvercle Enroulable Pour Comptoir GM et PM CA820554",
+                "slug": "set-de-2-boite-a-pain-de-cuisine-en-metal-avec-couvercle-enroulable-pour-comptoir-gm-et-pm-ca820554",
+                "images": [{
+                    "_id": "6283cac5a7a2698d2de0090a",
+                    "filename": "/storage/PnqvbiBRRgtq"
+                }, {
+                    "_id": "6283cac5a7a2698d2de00912",
+                    "filename": "/storage/kWBmalBhoRhJ"
+                }, {
+                    "_id": "6283cac5a7a2698d2de00917",
+                    "filename": "/storage/jBMXNxuaiweK"
+                }]
+            }, {
+                "_id": "6283cac5a7a2698d2de0091d",
+                "name": "Set  de 2 boîte à Pain De Cuisine En Métal Avec Couvercle Enroulable Pour Comptoir GM et PM CA820554",
+                "slug": "set-de-2-boite-a-pain-de-cuisine-en-metal-avec-couvercle-enroulable-pour-comptoir-gm-et-pm-ca820554",
+                "images": [{
+                    "_id": "6283cac5a7a2698d2de0090a",
+                    "filename": "/storage/PnqvbiBRRgtq"
+                }, {
+                    "_id": "6283cac5a7a2698d2de00912",
+                    "filename": "/storage/kWBmalBhoRhJ"
+                }, {
+                    "_id": "6283cac5a7a2698d2de00917",
+                    "filename": "/storage/jBMXNxuaiweK"
+                }]
+            }],
+            "status": "active",
+            "date": "2022-05-20T15:17:19.264Z",
+            "titre": "titre",
+            "desciption": "description",
+            "category": {
+                "_id": "6283cabfa7a2698d2de0089b",
+                "title": "Accessoires",
+                "slug": "accessoires"
+            },
+            "typeSection": 1,
+            "__v": 0
+        }],
+        "status": "active",
+        "date": "2022-05-20T16:15:47.989Z",
+        "position": 3,
+        "__v": 0
+    }],
+    "statusCode": 200
+}

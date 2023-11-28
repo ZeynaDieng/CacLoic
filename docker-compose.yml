@@ -1,0 +1,26 @@
+version: '3.7'
+
+services:
+  cac_front:
+    container_name: cac_front
+    image: intechgroup/cac_front:latest
+    restart: always
+    volumes:
+      - .:/src
+    networks:
+      - cac-network
+    environment:
+      - API_BASE_URL=https://apicac.intech.sn/api/v1
+      - BROWSER_BASE_URL=https://apicac.intech.sn/api/v1
+      - DEV_API_BASE_URL= http://localhost:3000/api/v1
+      - DEV_BROWSER_BASE_URL= http://localhost:3000/api/v1
+      - FACEBOOK_ID=205894401367682
+      - GOOGLE_ANALYTICS_ID=G-9B31XZCPXM
+      - APP_ENV=PROD
+      - NODE_ENV=production
+    ports:
+      - 2495:3004
+  
+networks:
+  cac-network:
+    external: true

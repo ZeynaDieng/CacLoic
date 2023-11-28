@@ -1,0 +1,87 @@
+
+
+//**************************
+//=== Usage ===
+//* .container-with-floated-children {
+  //@extend %clearfix;
+//}
+//**************************
+%clearfix {
+  *zoom: 1;
+  &:before, &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+//Visually hide an element
+//**************************
+//=== Usage ===
+//* .visually-hidden {
+ // @extend %visuallyhidden;
+//}
+//}
+//**************************/
+%visuallyhidden {
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
+  position: absolute;
+}
+
+%custom-button{
+  background-color: #009c95;
+  color: #ffffff;
+  text-shadow: none;
+  font-size: calculateRem(15px);
+  cursor: pointer;
+  display: inline-block;
+  min-height: 1em;
+  outline: none;
+  border: none;
+  vertical-align: baseline;
+
+  font-family: $mainFont;
+  margin: 0em 0em 0em 0em;
+  padding: 0.78571429em 1.5em 0.78571429em;
+  text-transform: none;
+  font-weight: bold;
+  line-height: 1em;
+  font-style: normal;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 0.28571429rem;
+  box-shadow: 0px 0px 0px 1px transparent inset, 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
+  user-select: none;
+  -webkit-transition: opacity 0.1s ease, background-color 0.1s ease, color 0.1s ease, box-shadow 0.1s ease, background 0.1s ease;
+  transition: opacity 0.1s ease, background-color 0.1s ease, color 0.1s ease, box-shadow 0.1s ease, background 0.1s ease;
+  //will-change: '';
+  -webkit-tap-highlight-color: transparent;
+
+  &:hover {
+
+    color: #ffffff;
+    text-shadow: none;
+  }
+}
+
+///line break
+%line-break-bottom-proprety{
+        content: '';
+        position: absolute;
+        
+}
+%line-break-left-proprety{
+        content: '';
+        position: absolute;
+        
+}
+
+//=======this application placeholder=======

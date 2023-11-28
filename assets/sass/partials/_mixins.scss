@@ -1,0 +1,371 @@
+@use "sass:math";
+
+@mixin genericconfiguration {
+  * {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+  }
+
+  *:after,
+  *:before {
+    box-sizing: border-box;
+  }
+
+  article,
+  aside,
+  details,
+  figcaption,
+  figure,
+  footer,
+  header,
+  hgroup,
+  nav,
+  section {
+    display: block;
+  }
+
+  html {
+    font-size: 100%;
+    height: auto !important;
+    height: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+
+  .clear {
+    display: block;
+  }
+
+  .clear::after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 1px;
+    visibility: hidden;
+  }
+}
+
+//Center an element verticaly and horizontally from its parent set to Relative METHODE 1
+
+
+//* .child{
+//       @include center(false, true);
+//}
+
+@mixin standard-shadow {
+  box-shadow: 0 5px 18px 3px rgba(0, 0, 0, .1);
+  padding-top: 20px;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+@mixin standard-card {
+  ////size, top, width, color 
+  @extend .standard-card;
+
+  &_content {}
+
+  &_title {
+    font-weight: 100;
+  }
+
+  &_description {
+    color: $the-dark-grey;
+  }
+
+  &_icon {
+    text-align: center;
+
+    i {
+      color: $secondary-color;
+
+      font-size: 3em;
+
+    }
+  }
+
+  &_name {
+    color: black;
+    font-size: calculateRem(16px);
+    line-height: 2em;
+    font-weight: 100;
+  }
+
+  &_total {
+    font-size: 2em;
+    color: black;
+    font-weight: 700
+  }
+
+
+}
+
+@mixin standard-card-simple {
+  ////size, top, width, color 
+  @extend .standard-card;
+  cursor: auto;
+
+  &:hover {
+    transform: translateY(0px)
+  }
+
+  &:hover::before {
+
+    box-shadow: none;
+  }
+
+  &::before {
+
+    box-shadow: none;
+  }
+
+  &_content {}
+
+  &_title {
+    font-weight: 100;
+  }
+
+  &_description {
+    color: $the-dark-grey;
+  }
+
+  &_icon {
+    text-align: center;
+
+    i {
+      color: $secondary-color;
+
+      font-size: 3em;
+
+    }
+  }
+
+  &_name {
+    color: black;
+    font-size: calculateRem(16px);
+    line-height: 2em;
+    font-weight: 100;
+  }
+
+  &_total {
+    font-size: 2em;
+    color: black;
+    font-weight: 700
+  }
+
+
+}
+
+
+//line break mixin
+@mixin linebreaker-bottom($size, $top, $width, $color) {
+  ////size, top, width, color 
+  @extend %line-break-bottom-proprety;
+  top: calculateRem($top);
+  border-bottom: calculateRem($size) solid $color;
+  width: $width;
+}
+
+@mixin linebreaker-left($size, $left, $height, $color) {
+  ////size, left, height, color 
+  @extend %line-break-left-proprety;
+  left: calculateRem($left);
+  border-bottom: calculateRem($size) solid $color;
+  height: $height;
+}
+
+//===============
+@mixin centerer($horizontal: true, $vertical: true) {
+  position: absolute;
+
+  @if ($horizontal and $vertical) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  @else if ($horizontal) {
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  @else if ($vertical) {
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+}
+
+//Center an element verticaly and horizontally from its parent set to Relative METHODE 2
+@mixin centerer2 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+//Set a rem font size with pixel fallback
+
+//* p {
+//  @include font-size(14px)
+//}
+
+@function calculateRem($size) {
+  $remSize: math.div($size, 16px);
+  @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+
+///////////Blur
+@mixin blur ($radius) {
+  -webkit-filter: blur($radius+px);
+  /* Chrome, Safari */
+  -ms-filter: blur($radius+px);
+  /* IE12? */
+  filter: url("data:image/svg+xml;utf8,<svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\"><filter id=\"blur\"><feGaussianBlur stdDeviation=\"#{$radius}\" /></filter></svg>#blur");
+  /* Firefox, Safari, Chrome*/
+  filter: progid:DXImageTransform.Microsoft.Blur(Strength=$radius);
+  /* IE9 */
+}
+
+
+@mixin box-sizing($val) {
+  -webkit-box-sizing: $val;
+  -moz-box-sizing: $val;
+  box-sizing: $val;
+}
+
+@mixin user-select($val...) {
+  -webkit-user-select: $val;
+  -moz-user-select: $val;
+  -ms-user-select: $val;
+  user-select: $val;
+}
+
+@mixin box-shadow($shadows...) {
+  -webkit-box-shadow: $shadows;
+  box-shadow: $shadows;
+}
+
+@function inverse-side($side) {
+  @if $side==top {
+    @return bottom;
+  }
+
+  @else if $side==bottom {
+    @return top;
+  }
+
+  @else if $side==left {
+    @return right;
+  }
+
+  @else if $side==right {
+    @return left;
+  }
+}
+
+@mixin linear-gradient($gradientLine, $colorStops...) {
+  background-image: -webkit-linear-gradient($gradientLine, $colorStops);
+  background-image: -moz-linear-gradient($gradientLine, $colorStops);
+  background-image: -o-linear-gradient($gradientLine, $colorStops);
+
+  @if length($gradientLine)==2 {
+    background-image: linear-gradient(to #{inverse-side(nth($gradientLine, 1))} #{inverse-side(nth($gradientLine, 2))}, $colorStops);
+  }
+
+  @else {
+    background-image: linear-gradient(to #{inverse-side($gradientLine)}, $colorStops);
+  }
+}
+
+@mixin radial-gradient($gradient...) {
+  background-image: -webkit-radial-gradient($gradient);
+  background-image: -moz-radial-gradient($gradient);
+  background-image: -o-radial-gradient($gradient);
+  background-image: radial-gradient($gradient);
+}
+
+@mixin transition($transition...) {
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -o-transition: $transition;
+  transition: $transition;
+}
+
+@mixin transition-property($properties...) {
+  -webkit-transition-property: $properties;
+  -moz-transition-property: $properties;
+  -o-transition-property: $properties;
+  transition-property: $properties;
+}
+
+@mixin transform($transform...) {
+  -webkit-transform: $transform;
+  -moz-transform: $transform;
+  -ms-transform: $transform;
+  -o-transform: $transform;
+  transform: $transform;
+}
+
+@mixin clearfix {
+  zoom: 1;
+
+  &:before,
+  &:after {
+    content: '';
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin inline-block {
+  display: inline-block;
+  vertical-align: baseline;
+  zoom: 1;
+  *display: inline;
+  *vertical-align: auto;
+}
+
+@mixin hide-text() {
+  font: 0/0 serif;
+  text-shadow: none;
+  color: transparent;
+}
+
+@mixin hidpi {
+
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (min-resolution: 144dpi) {
+    @content;
+  }
+}
+
+
+// PIXELS TO PERCENTAGES
+// $target: the desired font size for the element
+// $parent: the targets parent element font size (default: 16)
+//------------------------------------------
+@function pxtopercent($target, $parent: 16) {
+  @return percentage(math.div($target, $parent));
+}
+
+// Default
+.element {
+  font-size: pxtopercent(11);
+}
+
+// With custom $parent value
+.element {
+  font-size: pxtopercent(11, 20);
+}

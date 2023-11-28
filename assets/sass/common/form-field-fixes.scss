@@ -1,0 +1,177 @@
+$default-height:90px;
+$input-size:42px;
+$input-bottom:0px;
+$line-height:22px;
+$font-size:14px;
+.fix-search-input_wrapper {
+    //background-color: green;
+    // border-radius: calculateRem(3px);
+    //    padding-right: calculateRem(75px); //for search ico
+    transition: all 0.2s ease-in-out;
+    //background-color: rgba(0, 0, 255, 0);
+    //    height: calculateRem(36px);
+    //      input[value=""] {
+    //        background-color: red;
+    //    }
+    input {
+        width: 100%;
+        font-size: calculateRem(18px);
+        font-weight: 100;
+        border-radius: 3px;
+        //  box-shadow: none !important;
+        //border-radius: calculateRem(3px);
+        // box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+        border: 1px solid #C0C0C0 !important;
+        //background-color: red ;
+        //        /transition: all 0.3s ease-in-out;
+        padding: 10px !important;
+        transition: all 0.2s ease-in-out;
+        &:focus {
+            // background-color: $primary-color  !important;
+            //box-shadow: 0 0 5px rgba(103,246,127, 1) !important;
+            // border: 2px solid rgba(103,246,127, 1) !important;
+            border: 1px solid $primary-color !important;
+            // box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0), 0 0 0 0px rgba(0, 0, 0, 0.0) !important;
+        }
+        &:hover {
+            //            box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+            border: 1px solid $primary-color !important;
+        }
+
+        &::placeholder {
+            font-weight: 300;
+        }
+    }
+    textarea {
+        // height: calculateRem(36px);
+        //  border: 0;
+        width: 100%;
+        font-weight: 300;
+        //box-shadow: none !important;
+        //border-radius: calculateRem(3px);
+        // box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+        border-radius: 3px;
+        //  background-color: red;
+        border: 1px solid $grey-color !important;
+        margin-bottom: 0;
+        // transition: all 0.3s ease-in-out;
+        //background-color: $primary-color ;
+        transition: all 0.2s ease-in-out;
+        box-shadow: none;
+        &:focus {
+            border: 1px solid $primary-color !important;
+            background-color: white !important;
+            //  box-shadow: 0 0 5px rgba(103,246,127, 1) !important;
+            // border: 2px solid rgba(103,246,127, 1) !important;
+        }
+        &:hover {
+            //box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+            border: 1px solid $primary-color !important;
+            background-color: white !important;
+        }
+    }
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+.file-upload-wrapper {
+    height: $default-height;
+    position: relative;
+    &:after {
+        overflow: hidden;
+        content: attr(data-text);
+        //        @include breakpoint(laptop){
+        //
+        //        }
+        font-size: 18px;
+        position: absolute;
+        bottom: $input-bottom;
+        left: 0;
+        padding: 10px 15px;
+        display: block;
+        width: calc(100% - 40px);
+        pointer-events: none;
+        background: #E8E8E8;
+        color: black;
+        z-index: 20;
+        height: $input-size;
+        line-height: $line-height;
+        border-radius: 5px 10px 10px 5px;
+        font-weight: 300;
+        font-size: $font-size+2px;
+    }
+    &:before {
+        content: 'Sélectioner';
+        position: absolute;
+        bottom: $input-bottom;
+        right: 0;
+        display: inline-block;
+        height: $input-size;
+        background: $primary-color;
+        color: #fff;
+        font-weight: 700;
+        z-index: 25;
+        font-size: $font-size;
+        line-height: $line-height+20px;
+        padding: 0 15px;
+        text-transform: uppercase;
+        pointer-events: none;
+        border-radius: 0 5px 5px 0;
+    }
+    &:hover {
+        &:before {
+            background: darken($primary-color, 10%);
+        }
+    }
+    input[type='file'] {
+        opacity: 0;
+        position: absolute;
+        bottom: $input-bottom;
+        right: 0;
+        left: 0;
+        z-index: 99;
+        height: $input-size;
+        margin: 0;
+        padding: 0;
+        display: block;
+        cursor: pointer;
+        width: 100%;
+    }
+}
+
+/* Validation Sass Placeholders */
+%valid-input-style {
+    border-bottom: 1px solid $input-success-color;
+    box-shadow: 0 1px 0 0 $input-success-color;
+  }
+  %invalid-input-style {
+    border-bottom: $input-invalid-border;
+    box-shadow: 0 1px 0 0 $input-error-color;
+  }
+  %hidden-text {
+    color: transparent;
+    user-select: none;
+    pointer-events: none;
+  }
+  %custom-success-message {
+    content: attr(data-success);
+    color: $input-success-color;
+  }
+  %custom-error-message {
+    content: attr(data-error);
+    color: $input-error-color;
+  }
+  %input-after-style {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    opacity: 0;
+    transition: .2s opacity ease-out, .2s color ease-out;
+  }

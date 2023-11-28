@@ -1,0 +1,90 @@
+//@mixin breakpoint($point) {
+//   @if $point == desktop {
+//     @media (min-width: 70em) { @content ; }
+//  }
+//   @else if $point == laptop {
+//     @media (min-width: 64em) { @content ; }
+//  }
+//    @else if $point == tablet {
+//     @media (min-width: 50em) { @content ; }
+//  }
+//   @else if $point == phablet {
+//     @media (min-width: 37.5em)  { @content ; }
+//  }
+//  @else if $point == mobileonly {
+//     @media (max-width: 37.5em)  { @content ; }
+//
+//  }
+//}
+
+@mixin breakpoint($point) {
+  
+   @if $point == mobile {
+     @media screen and (min-width: 40em)   {@content;} /* Define mobile styles */
+}
+   
+   @else if $point == phablet {
+     @media screen and (min-width: 40.063em)  {@content;} /* min-width 641px, medium screens */
+  }
+   @else if $point == tablet {
+     @media only screen and (min-width: 40.063em) and (max-width: 64em) {@content;} /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+  }
+   @else if $point == laptop {
+     @media only screen and (min-width: 64.063em) {@content;} /* min-width 1025px, large screens */
+   }
+   @else if $point == laptoponly {
+     @media only screen and (min-width: 64.063em) and (max-width: 90em) {@content;} /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+    }
+   @else if $point == desktop {
+     @media only screen and (min-width: 90.063em) {@content;} /* min-width 1441px, xlarge screens */
+  }
+   @else if $point == desktoponly {
+     @media only screen and (min-width: 90.063em) and (max-width: 120em) {@content;} /* min-width 1441px and max-width 1920px, use when dealing with xlarge screen-only issues */
+  }
+  @else  if $point == xxldesktop {
+     @media only screen and (min-width: 120.063em) {@content;} /* min-width 1921px, xxlarge screens */
+  }
+    @else if $point == mobileonly {
+     @media screen and (max-width: 40em)   {@content;} /* max-width 640px, mobile-only styles, use when dealing with mobile issues */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+//@mixin breakpoint($point) {
+//    @if $point == xxldesktop {
+    // @media only screen and (min-width: 120.063em) {@content;} /* min-width 1921px, xxlarge screens */
+ // }
+ //  @else if $point == desktoponly {
+//     @media only screen and (min-width: 90.063em) and (max-width: 120em) {@content;} /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+ // }
+//   @else if $point == desktop {
+    // @media only screen and (min-width: 90.063em) { } /* min-width 1441px, xlarge screens */
+//  }
+ //  @else if $point == laptoponly {
+ //    @media only screen and (min-width: 64.063em) and (max-width: 90em) {@content;} /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+ // }
+ //  @else if $point == laptop {
+  ////   @media only screen and (min-width: 64.063em) {@content;} /* min-width 1025px, large screens */
+ // }
+ //  @else if $point == tablet {
+ //    @media only screen and (min-width: 40.063em) and (max-width: 64em) {@content;} /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+ // }
+ ////  @else if $point == phablet {
+ //    @media screen and (min-width: 40.063em)  {@content;} /* min-width 641px, medium screens */
+ // }
+ //  @else if $point == mobileonly {
+  //   @media screen and (max-width: 40em)   {@content;} /* max-width 640px, mobile-only styles, use when fucking with mobile issues */
+ // }
+ // @else if $point == mobile {
+  //   @media screen and (min-width: 39.9375em)   {@content;} /* Define mobile styles */
+
+ // }
+//}
